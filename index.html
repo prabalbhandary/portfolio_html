@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="shortcut icon" href="img/portfolio.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/portfolio.ico" />
+  </head>
+  <body>
+    <section class="main">
+      <section class="navbar">
+        <nav class="navbar">
+          <div class="logo-and-menu">
+            <div class="img">
+              <a href="index.html">
+                <img src="img/logo.png" alt="logo" width="100px" />
+              </a>
+            </div>
+            <!-- Add this inside the logo-and-menu div for the responsive navigation button -->
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <div class="navmenu">
+              <ul>
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <section class="body">
+        <!-- Buttons added -->
+        <div class="buttons-container">
+          <a href="#contact"><button class="contact-button">Contact</button></a>
+          <a href="#" class="cv-button" download="My_Resume.pdf">Download CV</a>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="about-section">
+          <div class="about-img">
+            <img src="img/me.jpg" alt="About Me" />
+          </div>
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hi, my name is Prabal Bhandary. I am here for frontend design.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Add this inside the services section -->
+      <section class="services" id="services">
+        <h2 style="text-align: center">Services</h2>
+        <div class="service">
+          <span>HTML</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="service">
+          <span>CSS</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 35%"></div>
+          </div>
+        </div>
+        <div class="service">
+          <span>JS</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 5%"></div>
+          </div>
+        </div>
+      </section>
+      <!-- Add this inside the portfolio section -->
+      <section class="portfolio" id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+          <div class="portfolio-item" style="cursor: pointer">
+            <img src="img/project1.jpg" alt="Project 1" />
+            <h4 style="text-align: center">Project 1</h4>
+          </div>
+          <div class="portfolio-item" style="cursor: pointer">
+            <img src="img/project2.jpg" alt="Project 2" />
+            <h4 style="text-align: center">Project 2</h4>
+          </div>
+          <div class="portfolio-item" style="cursor: pointer">
+            <img src="img/project3.jpg" alt="Project 3" />
+            <h4 style="text-align: center">Project 3</h4>
+          </div>
+          <div class="portfolio-item" style="cursor: pointer">
+            <img src="img/project3.jpg" alt="Project 3" />
+            <h4 style="text-align: center">Project 4</h4>
+          </div>
+          <div class="portfolio-item" style="cursor: pointer">
+            <img src="img/project3.jpg" alt="Project 3" />
+            <h4 style="text-align: center">Project 5</h4>
+          </div>
+          <!-- Add more portfolio items as needed -->
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <h2>Contact Me</h2>
+          <form action="" method="post" class="contact-form" id="myForm">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+
+            <button type="button" class="submit-button" onclick="submitForm()">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="footer">
+        <footer>
+          <p>&copy; 2024 Your Portfolio. All rights reserved.</p>
+        </footer>
+      </section>
+    </section>
+    <script src="logic/app.js"></script>
+  </body>
+</html>

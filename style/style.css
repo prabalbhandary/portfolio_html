@@ -1,0 +1,341 @@
+/* Style for the logo-and-menu container */
+.logo-and-menu {
+  display: flex;
+  justify-content: space-between; /* Aligns items to left and right */
+  align-items: center;
+  padding: 10px; /* Add padding for better spacing */
+}
+
+/* Style for the responsive navigation button */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navmenu {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navmenu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* Style for menu items */
+.navmenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navmenu li {
+  margin-right: 20px;
+}
+
+.navmenu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navmenu a:hover {
+  background-color: #eee;
+}
+
+/* Style for active menu item */
+.navmenu li.active a {
+  background-color: #ddd;
+}
+/* Add this to your CSS file for button styling */
+.buttons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-button,
+.cv-button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  text-decoration: none;
+  background: transparent;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-button:hover,
+.cv-button:hover {
+    background-color: #333;
+}
+.body {
+  background-image: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container {
+  text-align: center;
+}
+
+.contact-button,
+.cv-button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-button:hover,
+.cv-button:hover {
+  background-color: #555;
+}
+
+/* Media query for button responsiveness */
+@media screen and (max-width: 768px) {
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-button,
+  .cv-button {
+    margin-top: 10px;
+  }
+}
+/* Add this to your CSS file for footer styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media query for footer responsiveness */
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+  }
+}
+/* Add this to your CSS file for the about section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.about-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* Media query for about section responsiveness */
+@media screen and (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-img img {
+    margin-bottom: 20px;
+  }
+}
+/* Add this to your CSS file to make the navbar stick at the top */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Set the desired background color */
+  z-index: 1000; /* Set a high z-index to ensure it appears above other elements */
+}
+
+.logo-and-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Add padding to the navbar for better visibility */
+}
+
+.navmenu {
+  display: flex;
+  align-items: center;
+}
+
+.navmenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navmenu li {
+  margin-right: 20px;
+}
+
+.navmenu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navmenu a:hover {
+  color: #555;
+}
+/* Add this to your CSS file for the services section */
+.services {
+  margin: 20px;
+}
+
+.service {
+  margin-bottom: 20px;
+}
+
+.service span {
+  display: inline-block;
+  width: 60px;
+  font-weight: bold;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4caf50; /* Green color for the progress bar */
+}
+/* Add this to your CSS file for the portfolio section */
+.portfolio {
+  margin: 20px;
+}
+
+.portfolio h2 {
+  text-align: center;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Add this at the end of your existing styles in style.css */
+
+.contact {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.contact-form label {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+}
