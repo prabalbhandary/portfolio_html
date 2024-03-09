@@ -339,3 +339,25 @@
     grid-template-columns: 1fr;
   }
 }
+/* Add this to your CSS file for dark mode */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-light-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.dark-light-toggle i {
+  font-size: 24px;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.dark-light-toggle i:hover {
+  color: #ddd;
+}

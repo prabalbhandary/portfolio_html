@@ -23,3 +23,26 @@ menuItems.forEach((item) => {
 function submitForm(){
     location.reload()
 }
+// Add this in your JavaScript file (app.js)
+
+let darkMode = false;
+
+function toggleDarkMode() {
+  const body = document.body;
+  const darkModeIcon = document.getElementById("darkModeIcon");
+  const lightModeIcon = document.getElementById("lightModeIcon");
+
+  darkMode = !darkMode;
+
+  if (darkMode) {
+    body.classList.add("dark-mode");
+    darkModeIcon.style.display = "none";
+    lightModeIcon.style.display = "inline-block";
+  } else {
+    body.classList.remove("dark-mode");
+    darkModeIcon.style.display = "inline-block";
+    lightModeIcon.style.display = "none";
+  }
+}
+
+// Rest of your existing JavaScript code
